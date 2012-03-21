@@ -20,20 +20,4 @@ parameters:
                 new:
                     label: Add New Member
                     route: brs_admin_member_new
-                
-        page:
-            label: Pages
-            route: brs_admin_page_index
-            pages:
-                index:
-                    label: Browse Pages
-                    route: brs_admin_page_index
-                edit:
-                    label: Edit Page
-                    route: brs_admin_page_edit
-                    params:
-                        id: 0
-                    hidden: true
-                new:
-                    label: Add New Page
-                    route: brs_admin_page_new
+        
