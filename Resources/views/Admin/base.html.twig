@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+	 <head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>{% block title %}Site Admin{% endblock %}</title>
+		
+		{% stylesheets
+			filter='cssrewrite'
+			'bundles/brscore/css/global.css'
+			'bundles/brscore/css/jive.css'
+			'bundles/brscore/css/fonts.css'
+			'bundles/brsadmin/css/base.css'
+			'bundles/brsadmin/css/nav.css'
+			'bundles/brsadmin/css/forms.css'
+			'bundles/brsadmin/css/list.css'
+		%}
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+		{% endstylesheets %}
+		
+		{% block css %}
+		{% endblock %}
+		
+		{% javascripts
+			'bundles/brscore/js/jive/jquery.1.7.1.min.js'
+			'bundles/brscore/js/jive/jquery-ui-1.8.18.custom.min.js'
+			'bundles/brscore/js/jive/lib/oop.js'
+			'bundles/brscore/js/jive/jive.js'
+			'bundles/brscore/js/jive/lib/canopy.js'
+			'bundles/brscore/js/jive/lib/tabs.js'
+			'bundles/brscore/js/jive/lib/form.js'
+			'bundles/brscore/js/jive/lib/msg.js'
+			'bundles/brsadmin/js/nav.js'
+			'bundles/brscore/js/widget/ListWidget.js'
+			'bundles/brscore/js/widget/EditFormWidget.js'
+			'bundles/brscore/js/widget/SearchFormWidget.js'
+		%}
+		<script src="{{ asset_url }}"></script>
+		{% endjavascripts %}
+		 
+		{% block js %} 
+		{% endblock %}
+		
+		<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+	
+	</head>
+		
+	<body>
+	   
+	   	
+		<div id="container">
+		
+			{% block container %}
+		
+			{% include 'BRSAdminBundle:Admin:header.html.twig' %}
+			
+			<div id="view-container">
+			
+				<div id="view">
+				
+					{% block view %}{% endblock %}
+					
+				</div>
+				
+			</div>
+			
+			{% include 'BRSAdminBundle:Admin:footer.html.twig' %}
+			
+	  		{% endblock %}
+	  		
+		</div>
+	
+	</body>
+	
+</html>

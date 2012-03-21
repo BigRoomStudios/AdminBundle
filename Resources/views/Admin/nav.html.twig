@@ -1,0 +1,36 @@
+{% macro drawNav(pages, route, level, selected) %}
+    
+    <ul class="nav level-{{ level }} {% if selected %}selected{% endif %}">
+	    	
+		{% for key, page in pages %}
+			
+			{% set params = {} %}
+			
+			{% if page.params is defined %}
+			
+				{% set params = page.params %}
+				
+			{% endif %}
+			
+			<li class="{{ page.route }} {% if page.selected is defined %}selected{% endif %} {% if page.hidden is defined %}hidden{% endif %}" {% if page.selected is defined %}style="display:block;"{% endif %} >
+				
+				<a data-route="{{ page.route }}" id="nav_{{ page.route }}" class="{% if page.selected is defined %}selected{% endif %}" href="{% if page.route is defined %}{{ path(page.route, params) }}{% endif %}">{%if page.label is defined %}{{ page.label | trans | title }}{% else %}{{ key | trans | title}}{% endif %}<span class="indicator" style="{% if page.selected is not defined %}display:none;{% endif %}"></span></a>
+				
+				{% if page.pages is defined %}
+				
+					{{ _self.drawNav(page.pages, route, level+1, page.selected is defined) }}
+				
+				{% endif %}
+				
+			</li>
+			
+		{% endfor %}
+	
+	</ul>
+
+{% endmacro %}
+{% block primary_nav %}
+<div id="nav" class="wrapper">
+	{{ _self.drawNav(nav, route, 0, false) }}
+</div>
+{% endblock %}

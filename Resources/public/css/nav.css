@@ -1,0 +1,108 @@
+/* Navigation CSS */
+
+#nav {
+	margin-top:10px;
+	position: relative;
+	height: 40px;
+  	-webkit-box-shadow: 0 0 30px -3px #000;
+  	box-shadow:         0 0 30px -3px #000;
+  	border-radius: 3px;
+}
+
+#nav ul {
+	list-style: none;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+}
+
+#nav a {
+	display:block;
+	position:relative;
+	height:20px;
+	line-height: 20px;
+	padding:9px 15px 11px;
+	text-decoration:none;
+	font-size: 16px;
+}
+
+#nav ul.level-0 {
+	background: url('../images/nav_l1_bg.gif') repeat-x;
+	display: block;
+	z-index: 100;
+	border-right: 1px solid #92cb14;
+	border-left: 1px solid #92cb14;
+	border-radius: 3px 3px 0 0;
+} 
+
+#nav ul.level-0 li {
+	background: url('../images/nav_l1_div.png') no-repeat 100% 0;
+}
+
+#nav ul.level-0 a {
+	color:#ddff82;
+	margin-right: 1px;
+	border-radius: 3px;
+}
+
+#nav ul.level-0 a:hover,
+#nav ul.level-0 a.selected {
+	background: url('../images/nav_l1_bg.gif') repeat-x 0 -40px;
+	color:#FFF;
+}
+
+#nav ul.level-1 {
+	display: none;
+	z-index: 99;
+	border-right: 1px solid #335f00;
+	border-left: 1px solid #335f00;
+	border-radius: 0 0 3px 3px;
+}
+
+#nav li ul.selected {
+	background: url('../images/nav_l2_bg.gif') repeat-x;
+	top:40px;
+	left: -1px;
+} 
+
+#nav ul.level-1 li {
+	background: url('../images/nav_l2_div.png') no-repeat 100% 0;
+}
+
+#nav ul.level-1 a {
+	color:#c0e166;
+}
+
+#nav ul.level-1 a:hover,
+#nav ul.level-1 a.selected{
+	background: url('../images/nav_l2_bg.gif') repeat-x 0 -40px;
+	color: #e7f4c3;
+}
+
+#nav li .indicator {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	width: 16px;
+	height: 8px;
+	left: 50%;
+	bottom: -7px;
+	margin-left: -8px;
+	background: url('../images/nav_l1_selected.png') no-repeat;
+}
+
+#nav ul.level-1 li .indicator {
+	background: url('../images/nav_l2_selected.png') no-repeat;
+}
+
+#nav li {
+	float: left;
+	border-radius: 3px;
+}
+
+#nav ul.selected{
+	display: block;
+}
