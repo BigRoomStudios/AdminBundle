@@ -20,7 +20,7 @@ a:hover{
 /* frame containers */
 #container {
     padding:0px;
-    margin:15px;
+    margin: 10px 15px 15px;
 }
 
 #header {
