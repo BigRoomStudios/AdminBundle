@@ -1,6 +1,17 @@
-<div id="header">
+<div id="header" class="wrapper">
 
     <h1>Site Admin</h1>
+    
+    <span class="site">{{app.request.host}}</span>
+    
+    {% if app.user is defined %}
+    	<div class="user">
+    		{% if app.user.first_name is defined %}
+    			<span class="welcome">{{ 'Hey there' | trans }}, {{ app.user.first_name }} {{ app.user.last_name }}</span>
+    		{% endif %}
+    		<span class="logout"><a href="{{ path('logout') }}">{{ 'Log Out' | trans }}</a></span>
+    	</div>
+    {% endif %}
     
     {% include 'BRSAdminBundle:Admin:nav.html.twig' %}
     

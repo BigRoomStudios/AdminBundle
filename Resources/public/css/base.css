@@ -8,6 +8,15 @@ h1, h2, h3{
 	font-weight: 200;
 }
 
+a{
+	color: #d8ff4a;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;	
+}
+
 /* frame containers */
 #container {
     padding:0px;
@@ -17,6 +26,26 @@ h1, h2, h3{
 #header {
     padding:0px 0px 15px 0px;
     color: #d8ff4a;
+}
+
+#header h1{
+	float: left;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+#header .site {
+	float: left;
+	margin: 13px 0 0 15px;
+}
+
+#header .user {
+	float: right;
+	margin-top: 13px;
+}
+
+#header .user span {
+	margin-left: 15px;
 }
 
 #footer {
@@ -90,17 +119,19 @@ h1, h2, h3{
 
 /* Login Form */
 #login-form-wrapper{
-	margin:100px auto;
+	margin:200px auto 0;
 	width:280px;
 	position: relative;
 }
 
 #login-form {
-	background:#FFF;
-	padding:30px;
+	background: #eee;
+	border: 5px solid white;
+	padding:25px;
 	border-radius:5px;	
 	width:220px;
-	box-shadow: 0px 0px 5px #111;
+	-webkit-box-shadow: 0 0 30px -3px #000;
+  	box-shadow:         0 0 30px -3px #000;
 	position: relative;
 }
 
@@ -108,9 +139,18 @@ h1, h2, h3{
 	margin-top:10px;
 }
 
+#login-form .remember-me{
+	float: left;
+	color: #555;
+	margin-top: 14px;
+}
+
 #login-form input.button {
-	margin-top: 10px;
-	margin-left: 0;	
+	font-size: 14px;
+    height: 40px;
+    margin: 10px 2px 0 0;
+    padding: 0 8px 3px;
+    float: right;
 }
 
 #login-form #errors {
