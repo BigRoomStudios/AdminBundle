@@ -3,21 +3,3 @@ parameters:
     
         dashboard:
             route: brs_admin_dashboard_index
-            
-        member:
-            label: Members
-            route: brs_admin_member_index
-            pages:
-                index:
-                    label: Browse Members
-                    route: brs_admin_member_index
-                edit:
-                    label: Edit Member
-                    route: brs_admin_member_edit
-                    params:
-                        id: 0
-                    hidden: true
-                new:
-                    label: Add New Member
-                    route: brs_admin_member_new
-        
