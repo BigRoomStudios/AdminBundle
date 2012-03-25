@@ -108,6 +108,11 @@ a:hover{
 	font-size: 14px;
 }
 
+.widget-body {
+	background: white;
+	border-radius: 0 0 3px 3px;
+}
+
 .panel-widget{
 	position: relative;
 }
@@ -145,7 +150,7 @@ a:hover{
 	margin-top: 14px;
 }
 
-#login-form input.button {
+#login-form .button {
 	font-size: 14px;
     height: 40px;
     margin: 10px 2px 0 0;

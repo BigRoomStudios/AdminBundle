@@ -1,0 +1,27 @@
+ul.sortable{
+	margin: 0 5px 5px 5px;
+	padding-bottom: 5px;
+	list-style: none;
+}
+
+ul.sortable li .content{
+	border-top: 5px solid white;
+	background: #F0F0F0;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+ul.sortable li .content:hover{
+	background: #F7F7F7;	
+}
+
+ul.sortable li .content .actions{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+ul.sortable li .content .actions a{
+	margin-right: 10px;
+}
