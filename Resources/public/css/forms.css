@@ -52,7 +52,7 @@ input[type="text"], input[type="password"], textarea {
     font-size: 14px;
 	font-family: 'Trebuchet MS';
     padding:6px 8px;
-    min-width:200px;
+    width:200px;
 }
 
 select {
