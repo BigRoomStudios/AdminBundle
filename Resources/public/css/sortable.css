@@ -10,6 +10,7 @@ ul.sortable li .content{
 	padding: 10px;
 	cursor: pointer;
 	position: relative;
+	padding-right: 170px;
 }
 
 ul.sortable li .content:hover{
