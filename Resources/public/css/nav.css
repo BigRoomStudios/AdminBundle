@@ -1,13 +1,27 @@
 /* Navigation CSS */
 
+@border-color-1: #92cb14;
+@border-color-2: #335f00;
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.box-shadow (@spread: 30px) {
+  -webkit-box-shadow: 0 0 @spread -3px #000;
+  box-shadow:         0 0 @spread -3px #000;
+}
+
+
 #nav {
 	clear:both;
 	margin-top:10px;
 	position: relative;
 	height: 40px;
-  	-webkit-box-shadow: 0 0 30px -3px #000;
-  	box-shadow:         0 0 30px -3px #000;
-  	border-radius: 3px;
+  	.box-shadow;
+  	.rounded-corners(3px);
 }
 
 #nav ul {
@@ -34,8 +48,8 @@
 	background: url('../images/nav_l1_bg.gif') repeat-x;
 	display: block;
 	z-index: 100;
-	border-right: 1px solid #92cb14;
-	border-left: 1px solid #92cb14;
+	border-right: 1px solid @border-color-1;
+	border-left: 1px solid @border-color-1;
 	border-radius: 3px 3px 0 0;
 } 
 
@@ -58,8 +72,8 @@
 #nav ul.level-1 {
 	display: none;
 	z-index: 99;
-	border-right: 1px solid #335f00;
-	border-left: 1px solid #335f00;
+	border-right: 1px solid @border-color-2;
+	border-left: 1px solid @border-color-2;
 	border-radius: 0 0 3px 3px;
 }
 
