@@ -37,31 +37,17 @@
 .form label {
 	width: 100%;
 	display: block;
-    padding-bottom: 5px;
     line-height: 15px;
     color: #104f6c;
 }
 
 /* default inputs */
 input[type="text"], input[type="password"], textarea {
-    border:1px solid #ccc;
-    border-radius:3px;
-    box-shadow:inset 1px 1px 3px #ddd;
-    -moz-box-shadow:inset 1px 1px 3px #ddd;
-    -webkit-box-shadow:inset 1px 1px 3px #ddd;
-    font-size: 14px;
-	font-family: 'Trebuchet MS';
     padding:6px 8px;
     width:200px;
 }
 
 select {
-    border:1px solid #ccc;
-    border-radius:3px;
-    box-shadow:inset 1px 1px 3px #ddd;
-    -moz-box-shadow:inset 1px 1px 3px #ddd;
-    -webkit-box-shadow:inset 1px 1px 3px #ddd;
-    font-size:14px;
     padding:6px 8px;
 }
 
@@ -100,6 +86,9 @@ select {
 	margin-bottom:10px;
 }
 
+.actions button{
+	margin: 10px 0 0 10px;
+}
 
 
 /* Inline Blurbs */

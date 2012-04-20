@@ -81,6 +81,7 @@ a:hover{
 
 #view.hide {
 	/*margin-top: -40px;*/
+	display: block;
 	opacity: 0;
 }
 
@@ -140,22 +141,20 @@ a:hover{
 	position: relative;
 }
 
-#login-form input {
-	margin-top:10px;
+#login-form input{
+	margin-bottom: 10px;
 }
 
 #login-form .remember-me{
 	float: left;
 	color: #555;
-	margin-top: 14px;
+	margin-top: 3px;
 }
 
-#login-form .button {
-	font-size: 14px;
-    height: 40px;
-    margin: 10px 2px 0 0;
-    padding: 0 8px;
+#login-form .btn {
     float: right;
+    margin-right: 2px;
+    padding: 6px 10px;
 }
 
 #login-form #errors {
