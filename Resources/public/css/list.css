@@ -113,6 +113,21 @@
 	vertical-align:middle;
 }
 
+.list-widget table td .progress{
+	float: left;
+	width: 75px;
+	margin-bottom: 0;
+}
+
+.list-widget table td .close{
+	float: left;
+	margin-left: 4px;
+	font-size: 15px;
+    line-height: 14px;
+    padding: 0 4px 2px;
+    opacity: 1;
+}
+
 .list-widget table input.select{
 	display:block;
 	margin-left:auto;
