@@ -3,6 +3,16 @@
 	padding: 14px 18px;
 }
 
+.btn-small{
+	font-size: 13px;
+    line-height: 16px;
+    padding: 7px 9px;
+}
+
+.btn-small [class^="icon-"] {
+    margin-top: 2px;
+}
+
 .btn-file input {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
@@ -20,4 +30,21 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.btn-file{
+	float: left;
+	width: 70px;
+}
+
+
+.file-upload-widget .progress{
+	clear:left;
+	float: left;
+	width: 65px;
+	margin-right: 5px;
+}
+
+.file-upload-widget .close{
+	float: left;
 }
