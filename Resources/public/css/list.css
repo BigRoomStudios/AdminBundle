@@ -69,15 +69,15 @@
 
 .list-widget table tr.selected:hover td,
 .list-widget table tr:hover td {
-    background: #daf3fc;   
+    background-color: #e2f7ff;   
 }
 
 .list-widget table tr.selected td {
-    background: #e6f8fe;   
+    background-color: #e2f7ff;   
 }
 
 .list-widget table thead {
-    background: #daf3fc;
+    background-color: #daf3fc;
 }
 
 .list-widget table th {
@@ -179,4 +179,17 @@
 	margin-top: -5px;
 }
 
+.list-widget .reorder-dragger {
+	background-image: url('../../brscore/images/gripper.png');
+	background-repeat: no-repeat;
+	background-position: 6px 16px;
+	cursor: ns-resize;
+}
 
+.list-widget .reorder-dragger span{
+	
+	display: block;
+	width: 25px;
+	height: 25px;
+	
+}
