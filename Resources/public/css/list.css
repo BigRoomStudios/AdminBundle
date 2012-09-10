@@ -3,7 +3,7 @@
   	box-shadow:         0 0 30px -3px #000;
   	background: transparent;
   	border-radius: 3px;
-  	 background: #fff;
+  	background: #fff;
 }
 
 .list-widget .widget-header h2{
@@ -21,6 +21,7 @@
 .list-widget .list{
 	border: 5px solid #fff;
 	border-radius: 0 0 3px 3px;
+	background: #fff;
 }
 
 /* list view table */
