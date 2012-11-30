@@ -6,6 +6,12 @@
   	background: #fff;
 }
 
+.list-widget a {
+	color: #025d7a;
+}
+
+
+
 .list-widget .widget-header h2{
 	float:left;
 }
@@ -91,7 +97,6 @@
 }
 
 .list-widget table th a {
-	color: #025d7a;
 	text-decoration: none;
 	width: 100%;
 	display: block;
@@ -193,4 +198,17 @@
 	width: 25px;
 	height: 25px;
 	
+}
+
+.list-container i{
+	color: #555;
+	font-size: 26px;	
+}
+
+.list-container i.icon-caret-right{
+	cursor:pointer;
+}
+
+.list-widget .breadcrumb{
+	margin-bottom: 5px;
 }

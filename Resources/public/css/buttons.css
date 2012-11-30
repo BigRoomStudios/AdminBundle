@@ -4,13 +4,9 @@
 }
 
 .btn-small{
-	font-size: 13px;
-    line-height: 16px;
-    padding: 7px 9px;
-}
-
-.btn-small [class^="icon-"] {
-    margin-top: 2px;
+	font-size: 14px;
+    line-height: 18px;
+    padding: 7px 9px;   
 }
 
 .btn-file input {

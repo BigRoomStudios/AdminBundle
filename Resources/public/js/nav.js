@@ -23,21 +23,24 @@ var Navigation = Class.create({
 				
 				//event.preventDefault();
 				
-				var route = $(this).data('route');
-				
-				if(route){
+				if(event.handled !== true){
+				  
+					var route = $(this).data('route');
 					
-					event.preventDefault();
-					
-					var nav_id = 'nav_' + route;
-					
-					if($(nav_id)){
-				
-						event.preventDefault();			
+					if(route){
 						
-						$this.go(route, this.href);
+						event.preventDefault();
 						
-						return false;
+						var nav_id = 'nav_' + route;
+						
+						if($(nav_id)){
+					
+							event.preventDefault();			
+							
+							$this.go(route, this.href);
+							
+							return false;
+						}
 					}
 				}
 			});
