@@ -23,8 +23,12 @@ var Navigation = Class.create({
 				
 				//event.preventDefault();
 				
+				//console.log('nav click');
+				
 				if(event.handled !== true){
-				  
+				  	
+				  	event.handled = true;
+				  	
 					var route = $(this).data('route');
 					
 					if(route){
@@ -63,6 +67,8 @@ var Navigation = Class.create({
 	
 	go: function(route, href){
 		
+		//console.log('go');
+		
 		var nav_id = 'nav_' + route;
 		
 		history.pushState({route: route}, "", href);
@@ -73,6 +79,8 @@ var Navigation = Class.create({
 	},
 	
 	show_view: function(href) {
+		
+		//console.log('show_view');
 		
 		console.log(href);
 		
