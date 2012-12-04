@@ -52,7 +52,7 @@
 }
 
 .list-widget table td a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .list-widget table td a.btn:hover{
@@ -211,4 +211,9 @@
 
 .list-widget .breadcrumb{
 	margin-bottom: 5px;
+}
+
+.list-container [class^="icon-"]:before, .list-container [class*=" icon-"]:before{
+	font-size: 1.5em;
+	vertical-align: middle;
 }
