@@ -42,13 +42,15 @@
 }
 
 /* default inputs */
-input[type="text"], input[type="password"], textarea {
+input[type="text"], input[type="password"], textarea{
     padding:7px 8px;
     width:200px;
 }
 
 select {
-    padding:6px 8px;
+    padding:7px 8px;
+    height: 34px;
+    width: 215px;
 }
 
 
