@@ -6,7 +6,8 @@
   	background: #fff;
 }
 
-.list-widget .list a {
+.list-widget .breadcrumb a,
+.list-widget .list-container a {
 	color: #025d7a;
 }
 

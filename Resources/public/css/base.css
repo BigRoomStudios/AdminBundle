@@ -149,6 +149,11 @@ a:hover{
 	float: left;
 	color: #555;
 	margin-top: 3px;
+	width: 55%;
+}
+
+#login-form .remember-me label{
+	width: 100%;
 }
 
 #login-form .btn {
