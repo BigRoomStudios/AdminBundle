@@ -19,11 +19,17 @@
 	position: relative;
 }
 
+
 .form div.form-group {
-	clear:left;
-	width:100%;
+	clear: left;
+	float: left;
 	padding-bottom: 10px;
-	border-bottom: 5px solid white;
+}
+
+.form div.form-group-right {
+	float:right;
+	padding-bottom: 10px;
+	padding-right: 10px;
 }
 
 .form div.field {
@@ -92,6 +98,9 @@ select {
 	margin: 10px 0 0 10px;
 }
 
+.edit-widget .actions{
+	clear: left;
+}
 
 /* Inline Blurbs */
 
@@ -138,3 +147,7 @@ select {
 	clear: left;
 }
 
+.file-upload-widget .file-upload-thumb{
+	
+	padding-bottom: 10px;
+}

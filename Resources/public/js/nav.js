@@ -50,14 +50,17 @@ var Navigation = Class.create({
 			});
 			
 			window.onpopstate = function(event) {  
-					
-				var nav_id = 'nav_' + event.state.route;
 				
-				if($(nav_id)){
+				if(event.state && event.state.route){
+				
+					var nav_id = 'nav_' + event.state.route;
 					
-					$this.set_selected(nav_id);
-					
-					$this.show_view(document.location); 
+					if($(nav_id)){
+						
+						$this.set_selected(nav_id);
+						
+						$this.show_view(document.location); 
+					}
 				}
 			}; 
 		}
